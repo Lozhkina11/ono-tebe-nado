@@ -56,6 +56,8 @@ body {
 
 .logo {
   text-align: center;
+  display: block;
+  width: 148px;
 }
 
 .logo_image {
@@ -83,6 +85,15 @@ body {
   height: 757px;
 }
 
+/* Изображение */
+
+.cover__pic {
+  width: 100%;
+  height: 100%;
+}
+
+/* Пустой div */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -93,10 +104,43 @@ body {
   z-index: 2;
   background-size:cover;
   color: white;
+}
+
+/* h1 */
+
+.cover__title {
+  font-weight: 100%;
 
 }
 
-.cover__pic {
-  width: 100%;
-  height: 100%;
+.accent-span {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+/* Секция с карточками */
+
+.lots{
+  margin: auto;
+  padding-top: 180px;
+  max-width: 100%;
+  height: 579px;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+
+.lots__title {
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  padding-left: 40px;
 }

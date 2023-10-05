@@ -11,7 +11,6 @@ body {
 .header {
   display: flex;
   max-width: 100%;
-  /* width: 1440px; */
   height: 109px;
   margin-top: 92px;
   margin-left: auto;
@@ -71,14 +70,12 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  
-
 }
 
 /* Входная секция */
 
 .content-section {
-  box-sizing:border-box;
+  box-sizing: border-box;
   width: 100%;
   max-width: 1340px;
   margin: auto;
@@ -89,34 +86,33 @@ body {
   margin-top: 92px;
   width: 100%;
   min-width: 1440px;
-  height: 757px;
+  height: 100vh;
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-position: top center;
+  color:white;
+  z-index: -1;
+
+
 }
 
-/* Изображение */
-
-.cover__pic {
-  width: 100%;
-  height: 100%;
-}
 
 /* Пустой div */
 
 .overlay {
   position: absolute;
+  /* display: inline-block; */
+  /* width: 100%;
+  height: 100%; */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-size:cover; */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  background-size:cover;
-  color: white;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
-
-.cover__container {
   
-}
-
 /* h1 */
 
 .cover__title {
@@ -125,11 +121,16 @@ body {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 20px;
+  white-space: ;
 
 }
 
 .accent-span {
   display: block;
+}
+.letter-spacing-extended{
+  letter-spacing: 0.5em; 
 }
 
 .aligned-text_center {
@@ -142,16 +143,17 @@ body {
 
 /* Секция с карточками */
 
-.lots{
+.lots {
   margin: auto;
   padding-top: 180px;
   width: 100%;
   height: 579px;
   box-sizing: border-box;
-} 
+  position: relative;
+}
 
 .title {
- text-transform: uppercase;
+  text-transform: uppercase;
   font-family: Raleway, sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -165,26 +167,31 @@ body {
   display: flex;
   list-style-type: none;
   padding-top: 27px;
-  /* margin: 0 -25px; */
+  position: relative;
   justify-content: space-between;
-
-
+  padding-bottom: 30px;
 }
 .lots__box__cards-item {
-  /* margin: 0 25px; */
-} 
+  
+  
+}
 .lots__box__img {
   width: 430px;
   display: block;
   max-height: 450px;
+  
+   
 }
 
 .lots__box_pic {
   width: 100%;
-  height: 100%;
-  /* max-height: 450px; */
+
 }
 
+.link {
+  margin-left: 40px;
+  font-size: 20px;
+}
 /* Секция с информацией об аукционе */
 
 .about {
@@ -195,6 +202,6 @@ body {
   padding-left: 3%;
   padding-right: 3%;
   box-sizing: border-box;
-  /* display: flex;
-  align-items:center; */
+  display: flex;
+  align-items:center;
 }

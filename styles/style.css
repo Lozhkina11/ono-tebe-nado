@@ -13,19 +13,25 @@ body {
   max-width: 100%;
   height: 109px;
   margin-top: 92px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 3%;
-  padding-right: 3%;
   box-sizing: border-box;
+  align-items:center;
+  justify-content: center;
 }
 
+.content-section { 
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Меню */
 
 .header__nav {
   display: flex;
   align-items: center;
   margin-right: auto;
+  font-size: 18px;
 }
 
 .header__links-list {
@@ -57,6 +63,7 @@ body {
   text-align: center;
   display: block;
   width: 148px;
+  margin: auto;
 }
 
 .logo_image {
@@ -66,36 +73,30 @@ body {
 
 /* Адресс */
 
-.header__address {
+.address {
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+}
+.header__address {
   margin-left: auto;
 }
 
 /* ------------------------------------------------------------- */
 /* Входная секция */
 
-/* Этот класс вынесен вначало, потому что он применяется потом к другим секциям тоже */
-.content-section { 
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1340px;
-  margin: auto;
-}
-
 .cover {
   position: relative;
   margin-top: 92px;
   width: 100%;
-  min-width: 1440px;
-  height: 100vh;
+  /* min-width: 1440px; */
+  /* height: 100vh; */
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: top center;
   color:white;
   z-index: -1;
 }
-
 
 /* Пустой div */
 
@@ -108,7 +109,7 @@ body {
   bottom: 0;
   z-index: -1;
 }
-  
+
 /* h1 */
 
 .cover__title {
@@ -117,32 +118,91 @@ body {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 20px;
+  padding-top: 165px;
+  
 }
-
+.first-word {
+  height: 115px;
+  
+}
 .accent-span {
   display: block;
 }
 
-.letter-spacing-extended{
-  letter-spacing: 0.5em; 
+.second-word {
+  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
-
 .aligned-text_center {
   text-align: center;
+}
+
+.therd-word {
+  margin-top: 20px;
+  height: 100px;
+  margin-bottom: 147px;
 }
 
 .aligned-text_right {
   text-align: right;
 }
+
+.no-letter-spacing {
+  letter-spacing: -0.18em;
+}
+.letter-spacing-extended {
+  letter-spacing: 0.25em;
+}
+
+.text_btn {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding-bottom: 50px;
+  justify-content: end;
+  
+}
+
+.cover__description-text {
+  
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing:20px;
+  margin-left: auto;
+ 
+  
+}
+
+.bet-button {
+  display: flex;
+  align-items:center; 
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid white;
+  margin-left: auto;
+  /* align-items: end; */
+  padding: 12px 32px;
+}
 /* ------------------------------------------------------------- */
 /* Секция с карточками */
 
 .lots {
-  padding-top: 180px;
+  margin-top: 180px;
   width: 100%;
   height: 579px;
   box-sizing: border-box;
+  
 }
 
 .title {
@@ -176,9 +236,7 @@ body {
   height: 450px;
   width: 430px;
 }
-.lots__box__cards-item-link {
-  text-decoration: none;
-}
+
 .cards-item-left {
   background-image: url(../images/card-lot-01.jpg);
   margin-right: 25px;
@@ -192,6 +250,10 @@ body {
 .cards-item-right {
   background-image: url(../images/card-lot-03.jpg);
   margin-right: 0;
+}
+
+.lots__box__cards-item-link {
+  text-decoration: none;
 }
 
 /* Контент в карточках  */
@@ -224,17 +286,110 @@ body {
   margin-left: 40px; 
   font-size: 20px;
 }
+
 /* --------------------------------------------------------- */
 /* Секция с информацией об аукционе */
 
 .about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 25px;
+  max-width: 1340px;
   margin: auto;
-  padding-top: 192px;
-  max-width: 100%;
-  height: 487px;
-  padding-left: 3%;
-  padding-right: 3%;
   box-sizing: border-box;
+  margin-top: 192px;
+}
+
+.about__logo-empty {
+  height: 450px;
+  width: 430px;
+  grid-column: span 1;
+}
+
+.about__logo {
+  background-color: black;
+  margin: 0 95px;
+  height: 240px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__text {
+  grid-column: span 2;
+  box-sizing:border-box;
+  min-height: 388px;
+  width: 885px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  margin-bottom: 100px;
+}
+.about__text-content {
+ margin-bottom: 25px;
+  font-size: 20px;
+  white-space: pre-wrap;
+}
+.about__text-content:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------- */
+/* Подвал */
+
+.footer {
+  max-width: 1340px;
+  margin: auto;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: row;
+  margin-top: 169px;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+/* Меню */
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.footer__menu-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   align-items:center;
+}
+
+.footer__menu-link__no_underline {
+  text-decoration: none;
+}
+
+/* Ссылки на соц.сети */
+
+.footer__social-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  justify-content: space-between;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-icon{
+  height: 48px;
 }

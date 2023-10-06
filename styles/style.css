@@ -72,9 +72,11 @@ body {
   margin-left: auto;
 }
 
+/* ------------------------------------------------------------- */
 /* Входная секция */
 
-.content-section {
+/* Этот класс вынесен вначало, потому что он применяется потом к другим секциям тоже */
+.content-section { 
   box-sizing: border-box;
   width: 100%;
   max-width: 1340px;
@@ -92,8 +94,6 @@ body {
   background-position: top center;
   color:white;
   z-index: -1;
-
-
 }
 
 
@@ -101,11 +101,7 @@ body {
 
 .overlay {
   position: absolute;
-  /* display: inline-block; */
-  /* width: 100%;
-  height: 100%; */
   background-color: rgba(0, 0, 0, 0.6);
-  /* background-size:cover; */
   top: 0;
   left: 0;
   right: 0;
@@ -122,13 +118,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding: 20px;
-  white-space: ;
-
 }
 
 .accent-span {
   display: block;
 }
+
 .letter-spacing-extended{
   letter-spacing: 0.5em; 
 }
@@ -140,16 +135,14 @@ body {
 .aligned-text_right {
   text-align: right;
 }
-
+/* ------------------------------------------------------------- */
 /* Секция с карточками */
 
 .lots {
-  margin: auto;
   padding-top: 180px;
   width: 100%;
   height: 579px;
   box-sizing: border-box;
-  position: relative;
 }
 
 .title {
@@ -163,35 +156,75 @@ body {
   padding-left: 40px;
 }
 
+/* Карточки */
 .lots__box {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding-top: 27px;
   position: relative;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  justify-content: center;
 }
+
 .lots__box__cards-item {
-  
-  
-}
-.lots__box__img {
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  background-position: top center;
+  height: 450px;
   width: 430px;
-  display: block;
-  max-height: 450px;
-  
-   
+}
+.lots__box__cards-item-link {
+  text-decoration: none;
+}
+.cards-item-left {
+  background-image: url(../images/card-lot-01.jpg);
+  margin-right: 25px;
 }
 
-.lots__box_pic {
-  width: 100%;
-
+.cards-item-center {
+  background-image: url(../images/card-lot-02.jpg);
+  margin-right: 25px;
 }
 
-.link {
-  margin-left: 40px;
+.cards-item-right {
+  background-image: url(../images/card-lot-03.jpg);
+  margin-right: 0;
+}
+
+/* Контент в карточках  */
+.article__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; 
+  width: 350px;
+  margin: 50px 40px;
+  align-items: center;
+}
+
+.article__title {
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.article__text {
+  align-self: flex-end;
   font-size: 20px;
 }
+
+/* Ссылка под карточками  */
+.link {
+  display: flex;
+  align-items:end;
+  padding-top: 30px;
+  margin-left: 40px; 
+  font-size: 20px;
+}
+/* --------------------------------------------------------- */
 /* Секция с информацией об аукционе */
 
 .about {

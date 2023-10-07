@@ -154,9 +154,10 @@ body {
 
 
 
-.no-letter-spacing {
-  letter-spacing: 7px;
+.letter-spacing-30 {
+  letter-spacing: 30px;
 }
+
 
 .letter-spacing-extended {
   letter-spacing: 60px;
@@ -166,7 +167,7 @@ body {
   letter-spacing: 60px;
   margin-right: -53px;
 }
-.letter-spacing-do {
+.letter-spacing-30 {
   letter-spacing: 30px;
 }
 
@@ -347,8 +348,8 @@ body {
 }
 .about__text-content {
  margin-bottom: 25px;
-  font-size: 20px;
-  white-space: pre-wrap;
+ font-size: 20px;
+ /* white-space: pre-wrap; */
 }
 .about__text-content:last-child {
   margin-bottom: 0;

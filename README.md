@@ -1,1 +1,1 @@
-# Ono tebe nado
+# https://github.com/Lozhkina11/ono-tebe-nado

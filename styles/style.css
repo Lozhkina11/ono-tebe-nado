@@ -40,12 +40,12 @@ body {
   list-style-type: circle;
 }
 
-.header__links_list-item {
+.header__links_list_item {
   margin-right: 20px;
   margin-left: 13px;
 }
 
-.header__links-list_item:first-child {
+.header__links_list_item:first-child {
   margin-left: 0;
   list-style-type: none;
 }
@@ -147,7 +147,7 @@ body {
   text-align: right;
 }
 
-.third-word {
+.third_word {
   height: 100px;
   margin-top: 20px;
   margin-right: -31px;
@@ -192,7 +192,7 @@ body {
   border: 1px solid white;
   padding: 12px 32px;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: Raleway, serif;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -307,7 +307,7 @@ body {
   grid-gap: 25px;
 }
 
-.about__logo-empty {
+.about__logo_empty {
   grid-column: span 1;
   width: 430px;
   height: 450px;

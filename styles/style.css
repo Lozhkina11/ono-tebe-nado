@@ -29,9 +29,11 @@ body {
 
 .header__nav {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   margin-right: auto;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .header__links-list {
@@ -41,9 +43,10 @@ body {
 }
 
 .header__links-list-item {
-  margin-right: 12px;
+  margin-right: 20px;
   margin-left: 13px;
 }
+
 .header__links-list-item:first-child {
   list-style-type: none;
   margin-left: 0;
@@ -63,7 +66,7 @@ body {
   text-align: center;
   display: block;
   width: 148px;
-  margin: auto;
+  margin-right: 148px;
 }
 
 .logo_image {
@@ -77,9 +80,11 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  line-height: 24.3px;
 }
 .header__address {
   margin-left: auto;
+  /* margin-top: 20px; */
 }
 
 /* ------------------------------------------------------------- */
@@ -89,13 +94,12 @@ body {
   position: relative;
   margin-top: 92px;
   width: 100%;
-  /* min-width: 1440px; */
-  /* height: 100vh; */
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: top center;
   color:white;
   z-index: -1;
+  height: 757px;
 }
 
 /* Пустой div */
@@ -130,19 +134,23 @@ body {
 }
 
 .second-word {
-  margin-top: 20px;
+  margin-top: 10px;
   height: 100px;
   display: flex;
   justify-content: center;
+  margin-left: 2px;
 }
 .aligned-text_center {
   text-align: center;
 }
 
-.therd-word {
+.third-word {
   margin-top: 20px;
   height: 100px;
   margin-bottom: 147px;
+  margin-right: -7px;
+  /* padding: 0;
+  margin-left: 0; */
 }
 
 .aligned-text_right {
@@ -150,19 +158,29 @@ body {
 }
 
 .no-letter-spacing {
-  letter-spacing: -0.18em;
+  letter-spacing: 7px;
 }
+
 .letter-spacing-extended {
-  letter-spacing: 0.25em;
+  letter-spacing: 60px;
+}
+
+.letter-spacing-na {
+  letter-spacing: 60px;
+  
+}
+.letter-spacing-do {
+  letter-spacing: 30px;
 }
 
 .text_btn {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* flex-direction: row; */
   align-items:center;
   padding-bottom: 50px;
   justify-content: end;
-  
+  justify-items: center;
 }
 
 .cover__description-text {
@@ -171,8 +189,8 @@ body {
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing:20px;
-  margin-left: auto;
+  word-spacing:17px;
+  margin-left: 289px;
  
   
 }
@@ -292,7 +310,7 @@ body {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: 1fr 1fr 1fr ; 
   grid-gap: 25px;
   max-width: 1340px;
   margin: auto;
